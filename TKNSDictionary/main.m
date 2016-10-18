@@ -110,6 +110,34 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Combined dictionary:%@",mutableDict);
         
         
+        ///************Properties of NSDictionary*************
+        
+        // get description
+        NSString *prop1=students1.description;
+        NSLog(@"Description:%@",prop1);
+        
+        // get all keys
+        NSArray *prop2=students1.allKeys;
+        NSLog(@"All Keys of Student 1:%@",prop2);
+        
+        // get all values
+        NSArray *prop3=students2.allValues;
+        NSLog(@"All Values in student 2:%@",prop3);
+        
+        // get class name
+        NSString *prop4=students1.className;
+        NSLog(@"Class Name:%@",prop4);
+        
+        // get description in string file format
+        NSString *prop5=students1.descriptionInStringsFileFormat;
+        NSLog(@"Description in string format:%@",prop5);
+        
+        
+        // get count
+        NSString *prop6=[NSString stringWithFormat:@"%lu",students1.count];
+        NSLog(@"Count:%@",prop6);
+        
+        
     }
     return 0;
 }
